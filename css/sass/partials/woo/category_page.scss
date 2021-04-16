@@ -221,11 +221,7 @@
 .archive{
     .outofstock{
         & img{
-<<<<<<< HEAD
             // opacity: 0.2;
-=======
-            opacity: 0.2;
->>>>>>> d7a2223e709ae53b4626bf2012b4732d46b28b6e
         }
         position: relative;
         &::after{
@@ -237,18 +233,11 @@
             right: 0;
             font-size: 12px;
             top: 10px;
-<<<<<<< HEAD
             display: none;
-=======
->>>>>>> d7a2223e709ae53b4626bf2012b4732d46b28b6e
         }
         & .normal{
             opacity: 0;
             pointer-events: none;
         }
     }
-<<<<<<< HEAD
 } 
-=======
-}
->>>>>>> d7a2223e709ae53b4626bf2012b4732d46b28b6e

@@ -24,13 +24,13 @@
                 width: 35.6%;
                 background: rgba(255,255,255,0.8);
                 margin-left: 42px;
-                transform: skew(5deg);
+               
                 display: flex;
                 justify-content: center;
                  @include to ($breakpoint-sm){
                     width:100%;
                     margin-left: 0;
-                    transform: skew(0deg);
+                  
                 }
                 .h2_block{
                     padding-top: 50px;
@@ -50,11 +50,11 @@
                         background-color: $dark-grey;
                         color:$light-grey;
                         padding: 15px 45px;
-                        transform: skew(-10deg);
+                        
                         display: block;
                         width: auto;
                         text-transform: uppercase;
-                        bottom: -28px;
+                        top:0;
                         position: absolute;
                         // border:1px solid $dark-grey;
                         &:hover{
