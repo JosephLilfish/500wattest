@@ -1,0 +1,155 @@
+.woocommerce-cart{
+    & .shop_table{
+        & thead{
+            & th{
+                background-color: $main_grey;
+                color:#fff;
+                text-align: center;
+                & .nobr{
+                    font-size: 16px;
+                }
+            }
+        }
+        & .product-quantity{
+            & .d-f{
+                @include to ($breakpoint-sm){
+                    justify-content: flex-end;
+                }
+                & > div{
+                    display: flex;
+                    & .button_q{
+                        width: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid $light_grey!important;
+                        font-size: 28px;
+                        color:$light_grey;
+                        -webkit-user-select: none; /* Safari */
+                        -ms-user-select: none; /* IE 10 and IE 11 */
+                        user-select: none; /* Standard syntax */
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            & .quantity{
+                width: 40px;
+                height: 40px;
+                & input{
+                    height: 40px;
+                    width: 40px;
+                    background-color: #fff !important;
+                    color:#000 !important;
+                    border: 1px solid $light_grey!important;
+                }
+            }
+        }
+        & .product-remove{
+            @include to ($breakpoint-md){
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            & a{
+                font-size: 0;
+                position: relative;
+                &:after{
+                    position: absolute;
+                    display: block;
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f2ed";
+                    font-size: 20px;
+                    width: 50px;
+                    height: 50px;
+                    color: $main_grey;
+                    top: -9px;
+                    left: -24px;
+                }
+            }
+        }
+    }
+    .cart_totals{
+        width: 100% !important;
+        & h2{
+            font-size: 18px;
+        }
+        & table{
+            border-radius: 0;
+            margin-bottom: 0px !important;
+            // background-color: $main_grey;
+            border:none ;
+            border-bottom: 1px solid $main_grey;
+            & th{
+                color:$main_grey;
+            }
+            & td{
+                & span{
+                    & bdi{
+                        color:$main_grey;
+                    }
+                }
+            }   
+        }
+        & .wc-proceed-to-checkout{
+            padding-top: 0px;
+            & .checkout-button{
+                background: $gold_gradient !important;
+                border:none !important;
+                color: #fff !important;
+                padding: .3em 1em !important;
+                border-radius: 0 !important;
+                &:hover{
+                    background: $gold_gradient !important;
+                    padding: .3em 1em;
+                    color:#000 !important;
+                    border:none;
+                    &:after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.cart_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    @include to (1240px){
+        display: none;
+    }
+    & .cart_col{
+        display: flex;
+        align-items: center;
+        width: 33%;
+        & .text_side{
+            position: relative;
+            width: 100%;
+            & b,& .cart_text{
+                padding-left: 10px;
+                padding-top: 10px;
+            }
+            & .line{
+                height: 1px;
+                background: $border_color;
+                width: 100%;
+                position: absolute;
+                margin: 2px 0;
+            }
+        }
+    }
+}

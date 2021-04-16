@@ -1,0 +1,40 @@
+.all_posts{
+    padding-left: 0px !important;
+    & .post_li{
+        display: flex;
+        align-items: center;
+        border-bottom:1px solid $main_grey;
+        padding: 25px 0;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include to ($breakpoint-md){
+            flex-direction: column;
+        }
+        & .image_box{
+            width:30%;
+            @include to ($breakpoint-md){
+                width: 100%;
+            }
+            & img{
+                border:1px solid $border_color;
+                width: 100%;
+                height: auto;
+            }
+        }
+        & .content_post{
+            width:67%;
+            @include to ($breakpoint-md){
+                width: 100%;
+            }
+            & .blog_excerpt{
+                color:#000;
+                font-size: 18px;
+            }
+        }
+    }
+}
+.archive{
+    & #content-area{
+        margin-top: 50px !important;
+    }
+}

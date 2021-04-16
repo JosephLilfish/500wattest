@@ -1,0 +1,73 @@
+<<<<<<< HEAD
+$main_grey: #646464;
+$light_grey: #E1E1E1;
+$dark_grey: #393838;
+$red_color: #D8232A;
+$border_color:#707070;
+$gold_color:#ECD28D;
+$gold_gradient:linear-gradient(86deg, rgba(120,103,56,1) 0%, rgba(246,217,138,1) 49%, rgba(120,103,56,1) 100%);
+$gold_gradient_2:linear-gradient(0deg, rgba(120,103,56,1) 0%, rgba(255,225,145,1) 49%, rgba(120,103,56,1) 100%);
+$silver_gradient:linear-gradient(86deg, rgba(149,147,147,1) 0%, rgba(252,252,252,1) 49%, rgba(149,147,147,1) 100%);
+// ---------------------------------------------------------
+// @Breakpoints
+// ---------------------------------------------------------
+$breakpoint-xxl : 1920px;
+$breakpoint-xl : 1500px;
+$breakpoint-lg : 1300px;
+$breakpoint-md : 980px;
+$breakpoint-sm : 768px;
+$breakpoint-xs : 450px;
+
+$breakpoints: (
+  "xl\\+" "screen and (min-width: #{$breakpoint-xl})",
+  "lg\\+" "screen and (min-width: #{$breakpoint-lg})",
+  "md\\+" "screen and (min-width: #{$breakpoint-md})",
+  "sm\\+" "screen and (min-width: #{$breakpoint-sm})",
+  "xs\\+" "screen and (min-width: #{$breakpoint-xs})",
+
+  "xl-" "screen and (max-width: #{$breakpoint-xl - 1px})",
+  "lg-" "screen and (max-width: #{$breakpoint-lg - 1px})",
+  "md-" "screen and (max-width: #{$breakpoint-md - 1px})",
+  "sm-" "screen and (max-width: #{$breakpoint-sm - 1px})",
+
+  "lg" "screen and (min-width: #{$breakpoint-lg - 1px}) and (max-width: #{$breakpoint-xl - 1px})",
+  "md" "screen and (min-width: #{$breakpoint-md - 1px}) and (max-width: #{$breakpoint-lg - 1px})",
+  "sm" "screen and (min-width: #{$breakpoint-sm - 1px}) and (max-width: #{$breakpoint-md - 1px})",
+);
+=======
+$main_grey: #646464;
+$light_grey: #E1E1E1;
+$dark_grey: #393838;
+$red_color: #D8232A;
+$border_color:#707070;
+$gold_color:#ECD28D;
+$gold_gradient:linear-gradient(86deg, rgba(120,103,56,1) 0%, rgba(246,217,138,1) 49%, rgba(120,103,56,1) 100%);
+$gold_gradient_2:linear-gradient(0deg, rgba(120,103,56,1) 0%, rgba(255,225,145,1) 49%, rgba(120,103,56,1) 100%);
+$silver_gradient:linear-gradient(86deg, rgba(149,147,147,1) 0%, rgba(252,252,252,1) 49%, rgba(149,147,147,1) 100%);
+// ---------------------------------------------------------
+// @Breakpoints
+// ---------------------------------------------------------
+$breakpoint-xxl : 1920px;
+$breakpoint-xl : 1500px;
+$breakpoint-lg : 1300px;
+$breakpoint-md : 980px;
+$breakpoint-sm : 768px;
+$breakpoint-xs : 450px;
+
+$breakpoints: (
+  "xl\\+" "screen and (min-width: #{$breakpoint-xl})",
+  "lg\\+" "screen and (min-width: #{$breakpoint-lg})",
+  "md\\+" "screen and (min-width: #{$breakpoint-md})",
+  "sm\\+" "screen and (min-width: #{$breakpoint-sm})",
+  "xs\\+" "screen and (min-width: #{$breakpoint-xs})",
+
+  "xl-" "screen and (max-width: #{$breakpoint-xl - 1px})",
+  "lg-" "screen and (max-width: #{$breakpoint-lg - 1px})",
+  "md-" "screen and (max-width: #{$breakpoint-md - 1px})",
+  "sm-" "screen and (max-width: #{$breakpoint-sm - 1px})",
+
+  "lg" "screen and (min-width: #{$breakpoint-lg - 1px}) and (max-width: #{$breakpoint-xl - 1px})",
+  "md" "screen and (min-width: #{$breakpoint-md - 1px}) and (max-width: #{$breakpoint-lg - 1px})",
+  "sm" "screen and (min-width: #{$breakpoint-sm - 1px}) and (max-width: #{$breakpoint-md - 1px})",
+);
+>>>>>>> d7a2223e709ae53b4626bf2012b4732d46b28b6e

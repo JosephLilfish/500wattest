@@ -1,0 +1,64 @@
+.full_width_row{
+    background-color: #fff !important;
+    & .bread_row{
+        width: 100% !important;
+        @include to ($breakpoint-xl){
+            max-width: 80% !important;
+        }
+        @include to ($breakpoint-xs){
+            max-width: 90% !important;
+        }
+        & #breadcrumbs{
+            @include to ($breakpoint-sm){
+                margin-top: 10px;
+            }
+            & a{
+                color:#000;
+                font-size: 16px;
+                @include to ($breakpoint-sm){
+                    font-size: 12px;
+                }
+            }
+            & span{
+                @include to ($breakpoint-sm){
+                    font-size: 12px;
+                }
+            }
+            & .breadcrumb_last{
+                color:#000;
+                font-size: 16px;
+                position: relative;
+                 @include to ($breakpoint-sm){
+                    font-size: 14px;
+                }
+                &:after {
+                    width: 100%;
+                    height: 2px;
+                    background: linear-gradient(86deg, #786738 0%, #f6d98a 49%, #786738 100%);
+                    content: '';
+                    display: block;
+                    left: 0%;
+                    bottom: -2px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+#left-area{
+    .full_width_row{
+        background-color: #fff !important;
+        & .bread_row{
+            width: 100% !important;
+            @include to ($breakpoint-xl){
+                max-width: 100% !important;
+            }
+        }
+    }
+}
+.woocommerce-breadcrumb{
+    display: none;
+}
+body:not(.et-tb) #main-content .container, body:not(.et-tb-has-header) #main-content .container {
+    padding-top: 0;
+}

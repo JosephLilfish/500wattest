@@ -1,0 +1,88 @@
+#customer_login{
+    & h2{
+        display: none;
+    }
+    & .woocommerce-form{
+        border:none;
+        &.login{
+            position: relative;
+            &:after{
+                position: absolute;
+                top: 0;
+                right:-20px;
+                height: 100%;
+                width: 1px;
+                background: $main_grey;
+                border-radius: 0;
+                content: '';
+            }
+        }
+        & .my_account_title{
+            text-align: center;
+            font-weight: bold;
+        }
+        & .woocommerce-form-row, & .form-row{
+            & label{
+                display: none;
+            }
+            & input{
+                border-radius: 10px;
+            }
+            & .woocommerce-button {
+                width: 100%;
+                background: $gold_gradient;
+                border:none;
+                color: #fff;
+                border-radius:10px;
+                &:hover{
+                    background: $gold_gradient;
+                    padding: .3em 1em;
+                    color:#000;
+                    &:after{
+                        display: none;
+                    }
+                }
+            }
+        }
+        & .lost_password{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            & a{
+                font-size: 16px;
+                color:#000;
+                position: relative;
+                &:after, &:before{
+                    content:'';
+                    width: 30px;
+                    height: 2px;
+                    background-color: #000;
+                    top: 50%;
+                    position: absolute;
+                }
+                &:after{
+                   left: -35px; 
+                }
+                &:before{
+                    right: -35px;
+                }
+            }
+        }
+    }
+}
+
+.woocommerce-MyAccount-navigation{
+    & ul{
+        & li{
+            border-bottom:1px solid $light_grey;
+            padding: 5px 0;
+            & a{
+                color:#000;
+                font-size: 16px;
+            }
+            &:hover{
+                border-bottom:1px solid $main_grey;
+            }
+        }
+    }
+}

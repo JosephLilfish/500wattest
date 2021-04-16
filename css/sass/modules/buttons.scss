@@ -1,0 +1,89 @@
+.grey_button{
+    color: #fff;
+    background-color: #646464;
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    width: 315px;
+    text-align: center;
+    @include to ($breakpoint-xs){
+        width: auto;
+    }
+}
+.gold_hover{
+    &:hover{
+        background: $gold_gradient;
+        transition-duration: 0.2s;
+    }
+}
+.woocommerce{
+    & .woocommerce-Button.button, #place_order{
+        background: $gold_gradient !important;
+        border:none;
+        color: #fff;
+        padding: .3em 1em;
+        &:hover{
+            background: $gold_gradient !important;
+            padding: .3em 1em;
+            color:#000 !important;
+            border:none;
+            &:after{
+                display: none;
+            }
+        }
+    }
+}
+.shop_table {
+    & button{
+        background: #fff !important;
+       border: 1px solid #646464 !important;
+       color: #646464 !important;
+       padding: .3em 1em !important;
+       &:hover{
+           background: $gold_gradient !important;
+           padding: .3em 1em;
+           color:#000 !important;
+        //    border:none;
+           border: 1px solid #646464 !important;
+            &:after{
+                display: none;
+            }
+        }
+    }
+}
+.wc-backward,.wc-forward{
+    background: $silver_gradient !important;
+    border:none !important;
+    color: #000 !important;
+    padding: .3em 1em !important;
+    &:hover{
+        background: $gold_gradient !important;
+        padding: .3em 1em;
+        color:#000 !important;
+        border:none;
+        &:after{
+            display: none;
+        }
+    }
+}
+.border-button{
+    background-color: #fff;
+    border: 1px solid $main_grey;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: $main_grey;
+    display: block;
+    margin-bottom: 30px;
+    width: 209px;
+    text-align: center;
+    @include to ($breakpoint-xs){
+        width: auto;
+    }
+    &:hover{
+        background: $gold_gradient !important;
+        padding: 10px;
+        color:#000 !important;
+    }
+}

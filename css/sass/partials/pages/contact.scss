@@ -1,0 +1,28 @@
+.contact_box{
+    background-color: $main_grey;
+    padding: 30px;
+    & ul{
+        padding-left: 0;
+        padding-bottom: 0;
+        list-style-type: none;
+        & li{
+            color: $light_grey;
+            font-size: 16px;
+            line-height: 33px;
+            & a{
+                color: $light_grey;
+                font-size: 16px;
+                & i{
+                    color: $light_grey;
+                    font-size: 20px;
+                    margin-right: 20px;
+                }
+            }
+            & i{
+                color: $light_grey;
+                font-size: 20px;
+                margin-right: 20px;
+            }
+        }
+    }
+}

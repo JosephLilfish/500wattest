@@ -1,0 +1,11 @@
+.single-post{  
+    & #left-area{
+        & article{
+            max-width: 700px;
+            margin: 0 auto;
+        }
+    }  
+    & .bread_row{
+        max-width: 56% !important;
+    } 
+}

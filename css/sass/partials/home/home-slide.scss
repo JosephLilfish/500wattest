@@ -1,0 +1,72 @@
+.home-slider-wrapper{
+    position: relative;
+    & .slider_home-slider{
+        & .slick-arrow{
+            display: none !important;
+        }
+        & .slide_t_box{
+            height: 460px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            background-position: center;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+             @include to ($breakpoint-sm){
+                height: 350px;
+            }
+            & .text_box{
+                text-align: center;
+                color:$dark-grey;
+                text-align: center;
+                color: #333333;
+                width: 35.6%;
+                background: rgba(255,255,255,0.8);
+                margin-left: 42px;
+                transform: skew(5deg);
+                display: flex;
+                justify-content: center;
+                 @include to ($breakpoint-sm){
+                    width:100%;
+                    margin-left: 0;
+                    transform: skew(0deg);
+                }
+                .h2_block{
+                    padding-top: 50px;
+                    flex-direction: column;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    & .size-x1{
+                        font-size: 48px;
+                        font-weight: 100;
+                        padding-bottom: 45px;
+                        @include to ($breakpoint-sm){
+                            font-size: 24px !important;
+                        }
+                    }
+                    & .slide_button{
+                        background-color: $dark-grey;
+                        color:$light-grey;
+                        padding: 15px 45px;
+                        transform: skew(-10deg);
+                        display: block;
+                        width: auto;
+                        text-transform: uppercase;
+                        bottom: -28px;
+                        position: absolute;
+                        // border:1px solid $dark-grey;
+                        &:hover{
+                             background: $gold_gradient;
+                            transition-duration: 0.2s;
+                            color:#000;
+                            border:none
+                        }
+                    }
+                }
+            }          
+        }
+    }
+}
+   

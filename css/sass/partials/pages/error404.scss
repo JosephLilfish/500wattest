@@ -1,0 +1,34 @@
+.error404{
+    & .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        &:before{
+            display: none;
+        }
+        & h2{
+            font-size:42px;
+              background: -webkit-linear-gradient(#D5B86C, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+        }
+        & .error_button{
+            background: $red_color !important;
+            border:none;
+            color: #fff;
+            padding: .6em 1em;
+            margin-top: 15px;
+            &:hover{
+                background: $gold_gradient !important;
+                padding: .6em 1em;
+                color:#000 !important;
+                border:none;
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+}

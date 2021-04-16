@@ -1,0 +1,95 @@
+#yith-wcwl-form{
+    & .wishlist-title{
+        & h2{
+            font-size: 16px;
+        }
+    }
+    & .shop_table {
+        & thead{
+            & th{
+                background-color: $main_grey;
+                color:#fff;
+                text-align: center;
+                & .nobr{
+                    font-size: 16px;
+                }
+            }
+        }
+        & tbody{
+            & tr{
+                & .wishlist-empty{
+                    font-size: 16px;
+                    color:#000;
+                }
+                & td{
+                    padding: 20px 5px;
+                    border-bottom: 1px solid $main_grey;
+                    width: 25%;
+                    &.product-thumbnail{
+                        padding: 0 !important;
+                        & a{
+                            margin: 0 auto;
+                        }
+                    }
+                    &.product-name, &.product-price{
+                        font-size: 16px;
+                        text-align: center;
+                        color:#000;
+                        & a{
+                            color:#000;
+                        }
+                    }
+                    &.product-add-to-cart{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin: 0 !important;
+                        width: 100%;
+                        & a{
+                            margin: 0 5px !important;
+                            &.add_to_cart_button{
+                                padding:5px 15px!important;
+                                border-radius: 0px;
+                                & i{
+                                    margin: 0px;
+                                }
+                            }
+                            &:hover{
+                                &:after{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+.cwginstock-subscribe-form .panel-primary{
+    margin-top: 100px;
+    border-color: #646464 !important;
+    @include to ($breakpoint-xl){
+        margin-top: 170px;
+    }
+}
+.cwginstock-subscribe-form .panel-primary>.panel-heading{
+    background-color: #646464 !important;
+    border-color: #646464 !important;
+    padding-top: 20px;
+}
+.cwgstock_button{
+    background: $gold_gradient !important;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    &:hover{
+        background: $gold_gradient !important;
+        color:#000 !important;
+        border:none;
+        cursor: pointer;
+        &:after{
+            display: none;
+        }
+    }
+}

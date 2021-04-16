@@ -1,0 +1,67 @@
+.over_newsletter{
+    margin-top: 20px;
+    background-color: $main_grey;
+}
+.foot_newsletter{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    @include to ($breakpoint-md){
+        flex-direction: column;
+    }
+    & h3{
+        color:$light-grey;
+        font-size: 32px;
+        @include to ($breakpoint-md){
+            text-align: center;
+        }
+    }
+    & .tnp-subscription{
+        max-width: 614px !important;
+    }
+    & form{
+        display: flex;
+        align-items: center;    
+        @include to ($breakpoint-sm){
+            flex-direction: column;
+        }
+        & .tnp-field-email{
+            width:100%;
+            margin-bottom: 0px !important;
+            & label{
+                display: none;
+            }
+            & input {
+                // height: 38px;
+            }
+        }
+        & .tnp-field-button{
+            margin-bottom: 0px !important;
+            @include to ($breakpoint-md){   
+                width: 100%;    
+                margin-top: 1px;
+            }
+            & input{
+                background:$silver_gradient;
+                padding: 15.5px 30px;
+                color:#000;
+                text-transform: capitalize;
+                font-weight: bold;
+                @include to ($breakpoint-md){   
+                    width: 100%;    
+                }
+            }
+            &:hover{
+                & input{
+                    cursor: pointer;
+                    background: $gold_gradient;;
+                }
+            }
+        }
+    }
+} 
+.page-id-99{
+    .over_newsletter{
+        display: none !important;
+    }
+}
