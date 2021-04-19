@@ -11,10 +11,10 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 <?php if ( ! $is_page_builder_used ) : ?>
 
 	<div class="container">
-         
+	
 		<div id="content-area" class="clearfix">
 			<div id="left-area">
-           
+			
 <?php endif; ?>
         <?php if (! is_front_page()){ ?>
 
@@ -61,6 +61,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 							wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'Divi' ), 'after' => '</div>' ) );
 					?>
 					</div> <!-- .entry-content -->
+					
 
 				<?php
 					if ( ! $is_page_builder_used && comments_open() && 'on' === et_get_option( 'divi_show_pagescomments', 'false' ) ) comments_template( '', true );
@@ -70,7 +71,35 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 				</article> <!-- .et_pb_post -->
 
 			<?php endwhile; ?>
+			<div class="aboutSection">
+			<hr>
+		<div class="container aboutUs">
+			<?php 
+			$desc = get_field("description");
+			$img = get_field("image");
+			if($desc){
+				?>
+				<div class="aboutUsText">
+				<?php 
+				the_field("description");
+				?>
 
+				</div>
+				<?php
+
+			}
+			if($img){
+				?>
+				<div class="aboutUsImage">
+					<img src="<?php echo $img;?>" alt="" srcset="">
+				
+				<?php
+			}
+
+			?>
+
+		</div>
+		</div>
 <?php if ( ! $is_page_builder_used ) : ?>
 
 			</div> <!-- #left-area -->

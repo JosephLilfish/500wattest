@@ -21,7 +21,7 @@
             & .head_cat_main_ul{
                 display: flex;
               
-                width: 440px;
+                width: 480px;
                 justify-content: space-between;
                 position: relative;
                 height: 100%;
@@ -72,7 +72,7 @@
                             position: absolute;
                             display: flex;
                             top:125px;
-                            background: $main_grey;
+                            background: $white;
                             width: auto;
                             left: 0;
                             flex-wrap: wrap;
@@ -85,7 +85,7 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                border: 1px solid #6A6A6A;
+                               // border: 1px solid #6A6A6A;
                                 &:hover{
                                     background: $gold_gradient;
                                     & > a{
@@ -163,8 +163,10 @@
                         }
                     }
                     & a{
+                        font-family: 'Novecento';
+                        font-variant: small-caps;
                         color:$black;
-                        font-size: 16px;
+                        font-size: 20px;
                          @include to ($breakpoint-lg){
                             font-size: 14px;
                         }

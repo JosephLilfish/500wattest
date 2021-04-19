@@ -1,3 +1,5 @@
+
+
 #top-header{  
     hr{
         margin-top: 0;
@@ -12,8 +14,12 @@
         padding-top: 0;
 
         .topBarInfo{
-       
-            font-variant: small-caps;
+            flex-grow: 1;
+            text-align: right;
+            font-family: 'Novecento';
+          font-size: 16px;
+          font-variant: small-caps;
+         
 color: $black;
 font-size: 17px;
 span{
@@ -81,13 +87,14 @@ justify-content: flex-end;
             } 
         }
         & #et-secondary-menu{
-            float: left;
-            margin-right: 20px;
+            //float: left;
+            //margin-right: 20px;
             & li{
                 @include to ($breakpoint-lg){
                     margin-right: 2px;
                 }
                 & a{
+                    font-family: 'Novecento';
                     font-variant: small-caps;
                     font-weight: bold;
                     padding-right: 15px;

@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Novecento';
+    src: url(./assets/fonts/novecento_widenormal.woff2) format('woff2'),
+         url(./assets/fonts/novecento_widenormal.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Encode Sans Condensed';
+    src: url(./assets/fonts/EncodeSansCondensed.ttf) format('ttf');
+
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
 @import 'css/banner.scss';
 @import 'css/sass/modules/variables.scss';
 @import 'css/sass/modules/mixins.scss';
@@ -5,12 +21,15 @@
 @import 'css/sass/modules/buttons.scss';
 
 
+
 @import 'css/sass/partials/header/top-menu.scss';
 @import 'css/sass/partials/header/main-header.scss';
 @import 'css/sass/partials/header/breadcrumbs.scss';
+@import 'css/sass/partials/header/mobile-headers.scss';
 
 @import 'css/sass/partials/home/home-slide.scss';
 @import 'css/sass/partials/home/show-products.scss';
+@import 'css/sass/partials/home/buisness-desc.scss';
 
 @import 'css/sass/partials/footer/newsletter.scss';
 @import 'css/sass/partials/footer/footer.scss';

@@ -1,0 +1,44 @@
+.aboutSection{
+
+    hr{
+        margin-bottom: 40px;
+    }
+.aboutUs{
+
+    display: flex;
+    justify-content: space-between;
+    @include to ($breakpoint-md){
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutUsText{
+        padding-top: 30px;
+        font-family: 'Encode Sans Condensed';
+        //border: 1px solid black;
+        font-size: 24px;
+        padding: 50px 60px;
+        flex-grow: 1;
+        margin-right: 20px;
+        font-weight: 300;
+        @include to ($breakpoint-md){
+            order:1;
+            
+        }
+    }
+    .aboutUsImage{
+ 
+      img{
+          max-width: 500px;
+      }
+
+      @include to ($breakpoint-md){
+          display: flex;
+          justify-content: center;
+       
+            img{
+                max-width: 90%;
+            }
+    }
+    }
+}
+}

@@ -126,14 +126,16 @@
 
 
 
+
+
 	<?php if ( $et_top_info_defined && ! $et_slide_header || is_customize_preview() ) : ?>
 
 		<?php ob_start(); ?>
 
 		<div id="top-header"<?php echo $et_top_info_defined ? '' : 'style="display: none;"'; ?>>
+		
 
 			<div class="container clearfix">
-
 
 
 			<?php if ( $et_contact_info_defined ) : ?>
@@ -273,7 +275,7 @@
 		<div class="et_slide_in_menu_container">
 
 			<?php if ( 'fullscreen' === et_get_option( 'header_style', 'left' ) || is_customize_preview() ) { ?>
-
+				
 				<span class="mobile_menu_bar et_toggle_fullscreen_menu"></span>
 
 			<?php } ?>
@@ -286,7 +288,7 @@
 
 					<div class="et_slide_menu_top">
 
-
+					rlo
 
 					<?php if ( 'fullscreen' === et_get_option( 'header_style', 'left' ) ) { ?>
 
@@ -792,7 +794,15 @@
 
 		</header> <!-- #main-header -->
 
-		<div class="mobile_fone"><a href="tel:+48574636580"><i class="fas fa-phone"></i> +48 574 636 580</a></div>
+		<div class="mobileIconsContainer mobile_fone">
+
+		<ul class="header_icons">
+<li><a href="/moje-konto/"><img class="on_hover" src="<?php echo get_stylesheet_directory_uri();?>/gfx/account.png" alt="search"/></a></li>
+<li><a href="/schowek/"><i class="yith-wcwl-icon fa fa-heart-o"></i></a></li>
+<li><?php  echo do_shortcode ( "[woo_cart_but]" ) ; ?></li>
+</ul>
+
+		</div>
 
 	<?php
 

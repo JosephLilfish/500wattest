@@ -12,7 +12,7 @@
 			
                 <div class="text_box">
 					<div class="h2_block">
-						 <h2 class="size-x1 bold white title"><?php echo $slide['tytul'];?> halp</h2>
+						 <h2 class="size-x1 bold white title"><?php echo $slide['tytul'];?></h2>
 						 <a class="slide_button" href="<?php echo $slide['btn_url'];?>"><?php echo $slide['btn_text'];?></a>
                     </div>
                 </div>

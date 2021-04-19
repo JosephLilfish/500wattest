@@ -60,9 +60,8 @@ function eg_enqueue_scripts() {
 
 }
 
-
-
 add_action( 'wp_enqueue_scripts', 'eg_enqueue_scripts' );
+
 
 
 
@@ -149,6 +148,9 @@ add_filter('style_loader_src', 'remove_wp_versions_strings' );
 
 
 include_once( 'includes/shortcodes.php' );
+
+
+
 
 
 

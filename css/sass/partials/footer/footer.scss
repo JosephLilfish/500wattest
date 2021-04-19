@@ -1,7 +1,12 @@
+
+#main-footer{
+background-color: white!important;
+
+}
 #footer-widgets{
     & .footer-widget{
         & .title{
-            color: $light_grey;
+            color: $black;
             font-size: 24px;
             font-weight: bold;
             padding-bottom: 10px;
@@ -13,7 +18,7 @@
                 width: 230px;
                 position: absolute;
                 left: 0;
-                background-color: $light_grey;
+                background-color: $black;
                 bottom: -15px;
             }
         }
@@ -24,7 +29,11 @@
                     display: none;
                 }
                 & a{
+                    color: black;
                     font-size: 16px !important;
+                    &:hover{
+                        color:$dark-grey;
+                    }
                 }
             }
         }
@@ -35,7 +44,7 @@
     &:before{
         width: 60%;
         height: 1px;
-        background-color: $dark-grey;
+        background-color: $white;
         content:'';
         display: block;
         left: 20%;
@@ -57,13 +66,13 @@
         flex-direction: column;
         align-items: center;
         & .foot_mid_title{
-            color: $light_grey;
+            color: $black;
             font-size: 24px;
             padding-bottom: 10px;
         }
         & p{
             font-size: 16px;
-            color:$light_grey;
+            color:$black;
             @include to ($breakpoint-md){
                 text-align: center;
             }
@@ -85,7 +94,7 @@
                 & a{
                     display: flex;
                     align-self: center; 
-                    color: $light_grey;
+                    color: $black;
                     font-size: 16px;
                     & img{
                         margin-right: 10px;

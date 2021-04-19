@@ -1,0 +1,60 @@
+
+
+#wprmenu_bar{
+
+    background-color: white;
+    .hamburger{
+        .hamburger-box{
+            .hamburger-inner{
+                background-color: black;
+                &::after{
+                    background-color: black;
+                }
+                &::before{
+                    background-color: black;
+                }
+            }
+        }
+    }
+
+    .menu_title{
+        left: calc( 50% - 33px);
+    }
+
+    
+}
+
+.mobileIconsContainer{
+
+    background-color: white;
+    border-top: 1px solid $light_grey ;
+    border-bottom: 1px solid $light_grey ;
+    padding:0;
+.header_icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    li{
+        padding:5px;
+    flex-grow: 1;
+    align-self: center;
+    justify-content: center;
+        display: flex;
+        a{
+            width: 24px;
+            height: 24px;
+            i{
+                font-size:24px;
+            }
+            img{
+                width: 24px;
+            }
+        }
+ 
+ &:nth-child(2){
+     border-right: 1px solid $light_grey;
+     border-left: 1px solid $light_grey;
+ }
+    }
+}
+}
