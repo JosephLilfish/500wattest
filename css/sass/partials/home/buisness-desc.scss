@@ -14,15 +14,24 @@
     .aboutUsText{
         padding-top: 30px;
         font-family: 'Encode Sans Condensed';
+        line-height: 26px;
         //border: 1px solid black;
-        font-size: 24px;
-        padding: 50px 60px;
+        font-size: 20px;
+        padding: 50px 60px 50px 0;
         flex-grow: 1;
         margin-right: 20px;
         font-weight: 300;
+
+        @include to ($breakpoint-lg ){
+            padding: 10px 30px;  
+        }
         @include to ($breakpoint-md){
             order:1;
-            
+            display: flex;
+            justify-content: center;
+            padding:10px;
+            text-align: justify;
+            flex-direction: column;
         }
     }
     .aboutUsImage{
@@ -36,7 +45,7 @@
           justify-content: center;
        
             img{
-                max-width: 90%;
+                max-width: 100%;
             }
     }
     }

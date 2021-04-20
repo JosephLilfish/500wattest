@@ -1,3 +1,28 @@
+.wpfFilterWrapper{
+    .wpfFilterContent{
+    .ui-slider-horizontal{
+        height: 1px;
+        
+            .ui-slider-handle{
+            background-color: black;
+            border-radius: 50%;
+
+            width: 1em;
+            height: 1em;
+
+            top: -.45em;
+            &:hover{
+                background-color: $dark_grey!important;
+                border: 1px solid $dark_grey!important ;
+            }
+            }
+        
+    }
+}
+}
+
+
+
 .woocommerce-products-header__title.page-title{
     margin-bottom: 30px;
 }
@@ -117,9 +142,9 @@
     }
 }
 .category_widget{
-    background: $main-grey;
+    background: $white;
     & a{
-        color:$light_grey !important;
+        color:$black !important;
         font-family: 'Noto Sans',Helvetica,Arial,Lucida,sans-serif;
     }
     & .category_name{

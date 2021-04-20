@@ -182,3 +182,10 @@ function new_loop_shop_per_page( $cols ) {
   $cols = 40;
   return $cols;
 }
+
+add_filter('loop_shop_columns', 'loop_columns', 999);
+if (!function_exists('loop_columns')) {
+	function loop_columns() {
+		return 5; // 3 products per row
+	}
+}

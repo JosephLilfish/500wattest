@@ -1,17 +1,22 @@
 @font-face {
+  font-family: 'Encode Sans Condensed';
+  src: url(./assets/fonts/EncodeSansCondensed-Light.woff2) format('woff2'),
+      url(./assets/fonts/EncodeSansCondensed-Light.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@font-face {
     font-family: 'Novecento';
     src: url(./assets/fonts/novecento_widenormal.woff2) format('woff2'),
          url(./assets/fonts/novecento_widenormal.woff) format('woff');
     font-weight: normal;
     font-style: normal;
   }
-  @font-face {
-    font-family: 'Encode Sans Condensed';
-    src: url(./assets/fonts/EncodeSansCondensed.ttf) format('ttf');
 
-    font-weight: normal;
-    font-style: normal;
-  }
 
 
 @import 'css/banner.scss';

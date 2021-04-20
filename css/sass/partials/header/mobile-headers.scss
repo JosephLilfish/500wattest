@@ -1,7 +1,32 @@
 
 
-#wprmenu_bar{
+.mobileInfoBar{
+    display: none;
+    @include to($breakpoint-md){
+        display: block;
+    }
+background-color: white;
+width: 100%;
+text-align: center;
+padding:3px 0 ;
+position: fixed;
+top:0px;
+z-index: 3;
+font-family: 'Novecento';
+font-weight: 800;
+span{
+font-weight: 900;
+font-size: 22px;
+}
+hr{
+    margin: 0;
+    border-top: 1px solid $light_grey;
 
+}
+}
+
+#wprmenu_bar{
+top: 30px!important;
     background-color: white;
     .hamburger{
         .hamburger-box{
@@ -18,14 +43,14 @@
     }
 
     .menu_title{
-        left: calc( 50% - 33px);
+        left: calc( 50% - 27px);
     }
 
     
 }
 
 .mobileIconsContainer{
-
+top: 120px!important;
     background-color: white;
     border-top: 1px solid $light_grey ;
     border-bottom: 1px solid $light_grey ;

@@ -32,6 +32,11 @@
                     margin-left: 0;
                   
                 }
+                @include to ($breakpoint-md){
+                    width:70%;
+                    margin-left: 0;
+                  
+                }
                 .h2_block{
                     padding-top: 50px;
                     flex-direction: column;
@@ -54,8 +59,11 @@
                         display: block;
                         width: auto;
                         text-transform: uppercase;
-                        bottom: 40px;
+                        bottom: 130px;
                         position: absolute;
+                        @include to ($breakpoint-sm){
+                         bottom: 80px;   
+                        }
                         // border:1px solid $dark-grey;
                         &:hover{
                              background: $gold_gradient;
@@ -63,6 +71,7 @@
                             color:#000;
                             border:none
                         }
+                     
                     }
                 }
             }          
