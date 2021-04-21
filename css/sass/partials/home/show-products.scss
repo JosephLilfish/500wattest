@@ -16,7 +16,7 @@
             width: 46%;
         }
         @include to ($breakpoint-xs){
-            width: 96%;
+            width: 47%;
             margin-bottom: 15px;
             border-bottom: 1px solid #e1e1e1;
             padding-bottom: 15px;
@@ -39,12 +39,19 @@
             color:$main_grey;
             font-size: 24px; 
             text-align: center;  
+            @include to ($breakpoint-xs){
+                font-size:15px ;
+                min-height: 75px;
+            }
         }
         & .price{
             color:$main_grey;
             font-size: 24px; 
             text-align: center;  
             margin-top: 20px;
+            @include to ($breakpoint-xs){
+                font-size:15px ;
+            }
         }
         & .product_icons_bot{
             & > ul{
@@ -54,10 +61,21 @@
                 justify-content: center;
                 padding-left: 0 !important;
                 margin-top: 10px;
+                @include to ($breakpoint-xs){
+                    align-items: center;
+                }
                 & li{
+                    .before_hover{
+                        @include to ($breakpoint-xs){
+                        width: 25px;
+                        height: auto;
+                    }
+                    }
+                   
                     margin: 0 5px;
                     color: $main_grey;
                     font-size: 34px;
+                  
                     & .yith-wcwl-add-to-wishlist{
                         margin-top: 0px;
                     }
@@ -69,6 +87,9 @@
                             width: 100%;
                             &:before{
                                 font-size: 38px;
+                                @include to ($breakpoint-xs){
+                                    font-size:25px ;
+                                }
                             }
                         }
                         & .on_hover{

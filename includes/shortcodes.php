@@ -26,6 +26,14 @@ function home_slider( ) {
 }
 add_shortcode( 'home_slider', 'home_slider' );
 
+function home_banner( ) {
+
+    ob_start();
+    get_template_part( 'includes/partials/home-banner' );
+    return ob_get_clean();
+}
+add_shortcode( 'home_banner', 'home_banner' );
+
 
 function category_name( ) {
 

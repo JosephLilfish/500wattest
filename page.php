@@ -25,15 +25,16 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
                         yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
                     }
                 ?>
-                </div>
+               	</div>
             </div><?php
             } ?>
+		
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+				
 				<?php if ( ! $is_page_builder_used ) : ?>
-
+					
 					<h1 class="entry-title main_title"><?php the_title(); ?></h1>
 				<?php
 					$thumb = '';
@@ -52,17 +53,18 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 				?>
 
 				<?php endif; ?>
-
+			
 					<div class="entry-content">
 					<?php
+					
 						the_content();
-
+						
 						if ( ! $is_page_builder_used )
 							wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'Divi' ), 'after' => '</div>' ) );
 					?>
-					</div> <!-- .entry-content -->
+					</div>  <!-- .entry-content -->
 					
-
+				
 				<?php
 					if ( ! $is_page_builder_used && comments_open() && 'on' === et_get_option( 'divi_show_pagescomments', 'false' ) ) comments_template( '', true );
 				?>

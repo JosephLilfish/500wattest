@@ -15,6 +15,7 @@
 						 <h2 class="size-x1 bold white title"><?php echo $slide['tytul'];?></h2>
 						 <a class="slide_button" href="<?php echo $slide['btn_url'];?>"><?php echo $slide['btn_text'];?></a>
                     </div>
+				
                 </div>
 				
 			</div>		
