@@ -50,7 +50,9 @@ top: 30px!important;
 }
 
 .mobileIconsContainer{
-
+.cart-contents{
+    position: relative;
+}
     .cart-contents-count{
         @include to ($breakpoint-md){
             position: absolute;
@@ -63,8 +65,9 @@ top: 30px!important;
             vertical-align: middle;
             text-align: center;
             font-size: 12px;
-   
-        top:0;
+            
+        top:-10px;
+        left: 15px;
         }
 
     }

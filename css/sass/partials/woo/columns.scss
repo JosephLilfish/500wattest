@@ -2,20 +2,23 @@
 @media all and (min-width:1024px) {
     [class*=woocommerce]{
         ul.products{
+    
             li.product{
                 width: 16.96%!important;
                 margin: 0 3.8% 2.992em 0!important;
                 clear: none!important;
+                &:nth-child(4n){
+                    clear: none!important;
+                }
                 &:nth-child(5n){
                     margin-right:0px!important;
                 }
                 &:nth-child(5n+1){
                     clear: both!important;
                 }
-                &:nth-child(4n){
-                    clear: none!important;
-                }
+                
             }
         }
     } 
   }
+

@@ -14,7 +14,7 @@ function woo_cart_but() {
   
         ?>
         <a class="menu-item cart-contents" href="<?php echo $cart_url; ?>" title="Koszyk">
-        <img class="on_hover" src="<?php echo get_stylesheet_directory_uri();?>/gfx/cart_top.png" alt="search"/>
+        <img class="on_hover" src="<?php echo get_stylesheet_directory_uri();?>/gfx/shopping-cart-solid.svg" alt="search"/>
             <?php
             if ( $cart_count > 0 ) {
             ?>
@@ -56,7 +56,7 @@ function woo_cart_but_count( $fragments ) {
 }
 ?>
 <ul class="header_icons">
-<li><a href="/moje-konto/"><img class="on_hover" src="<?php echo get_stylesheet_directory_uri();?>/gfx/account.png" alt="search"/></a></li>
+<li><a href="/moje-konto/"><img class="on_hover" src="<?php echo get_stylesheet_directory_uri();?>/gfx/user-alt-solid.svg" alt="search"/></a></li>
 <li><a href="/schowek/"><i class="yith-wcwl-icon fa fa-heart-o"></i></a></li>
 <li><?php  echo do_shortcode ( "[woo_cart_but]" ) ; ?></li>
 </ul>

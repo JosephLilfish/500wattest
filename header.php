@@ -799,7 +799,7 @@
 		<div class="mobileIconsContainer mobile_fone">
 
 		<ul class="header_icons">
-<li><a href="/moje-konto/"><img class="on_hover" src="<?php echo get_stylesheet_directory_uri();?>/gfx/account.png" alt="search"/></a></li>
+<li><a href="/moje-konto/"><img class="on_hover" src="<?php echo get_stylesheet_directory_uri();?>/gfx/user-alt-solid.svg" alt="search"/></a></li>
 <li><a href="/schowek/"><i class="yith-wcwl-icon fa fa-heart-o"></i></a></li>
 <li><?php  echo do_shortcode ( "[woo_cart_but]" ) ; ?></li>
 </ul>

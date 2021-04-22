@@ -58,6 +58,7 @@ function eg_enqueue_scripts() {
 
      wp_enqueue_script( 'slick', "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" );
 
+
 }
 
 add_action( 'wp_enqueue_scripts', 'eg_enqueue_scripts' );

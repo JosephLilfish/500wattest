@@ -8,6 +8,7 @@ add_action("woocommerce_single_product_summary","woocommerce_template_single_pri
 add_action("woocommerce_single_product_summary","woocommerce_template_single_add_to_cart",10);
 add_action("woocommerce_single_product_summary","woocommerce_template_single_excerpt",55);
 
+
 add_filter( 'woocommerce_product_tabs', 'bbloomer_remove_product_tabs', 9999 );
   
 function bbloomer_remove_product_tabs( $tabs ) {
@@ -134,3 +135,4 @@ function add_icon(){
     </div>
 <?php
 } 
+

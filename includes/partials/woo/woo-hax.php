@@ -138,16 +138,14 @@ woocommerce_wp_text_input( array(
 // -----------------------------------------
 // 2. Save custom field on product variation save
 
-add_action( 'woocommerce_save_product_variation', 'count_m2_in_box_save_custom_field_variations', 10, 2 );
+// CUSTOM VARIANTS PROBLEM xD
 
-function count_m2_in_box_save_custom_field_variations( $variation_id, $i ) {
-$custom_field = $_POST['cross_sell_prod'][$i];
-if ( isset( $custom_field ) ) update_post_meta( $variation_id, 'cross_sell_prod', esc_attr( $custom_field ) );
-}
-// -----------------------------------------
-// 3. Store custom field value into variation data
 
-add_filter( 'woocommerce_available_variation', 'count_m2_in_box_add_custom_field_variation_data' );
+//add_action( 'woocommerce_save_product_variation', 'count_m2_in_box_save_custom_field_variations', 10, 2 );
+//function count_m2_in_box_save_custom_field_variations( $variation_id, $i ) {
+//$custom_field = $_POST['cross_sell_prod'][$i];
+//if ( isset( $custom_field ) ) update_post_meta( $variation_id, 'cross_sell_prod', esc_attr( $custom_field ) );}
+//add_filter( 'woocommerce_available_variation', 'count_m2_in_box_add_custom_field_variation_data' );
 
 function box_count_places_add_custom_field_variation_data( $variations ) {
 $variations['cross_sell_prod'] = '<div class="woocommerce_custom_field">Powiązane produkty: <span>' . get_post_meta( $variations[ 'variation_id' ], 'cross_sell_prod', true ) . '</span></div>';

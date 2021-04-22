@@ -1,7 +1,7 @@
 <?php
     $args = array(
 	
-		'posts_per_page' => 9,
+		'posts_per_page' => 10,
 		'post_type' => 'product',
         'meta_key'  	=> 'total_sales',
         'orderby'   	=> 'meta_value_num',
