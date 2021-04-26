@@ -10,14 +10,103 @@
         & .product{
             & .summary{
                 
-                form.variablesTemplate{
-                    display: contents!important;
+                
 
-                    .price{
+                .selectAttr{
+                    align-items:flex-start;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    padding-bottom: 20px;
+                    p{
+                        padding-bottom: 0;
+                    }
+
+                    .nr_catalog{
+                        padding-bottom: 10px;
+                    }
+                    display: flex;
+                    select{
                         width: 100%;
-                        padding-bottom: 20px;
+                        margin: 0 5px;
+                        margin-bottom: 10px;
+                    }
+                    label{
+                        display: inline-block;
+                        white-space: nowrap;
+                        padding: 0 3px;
+                    }
+                    .serie{
+                        margin-bottom: 10px;
+                        padding-left: 4px;
+                        span{
+                            color: $orangeOne;
+                            font-weight: bold;
+                        }
                     }
                 }
+                .variations_form{
+                   display: none!important;
+                   
+                }
+                .priceContainer{
+                    display: none;
+                    padding-top: 10px;
+                }
+
+                .buttonContainer{
+                    .quantityVariable{
+                        width: 180px;
+                    }
+                    .wishButton{
+                        background: $silver_gradient !important;
+                        margin-right: 5px;
+                        border:none !important;
+                        color: #000 !important;
+                        padding:13px 20px !important;
+                        border-radius: 0;
+                        padding-left: 56px !important;
+                        position: relative;
+                        font-size: 16px;
+                        @include to ($breakpoint-xl){
+                            font-size:14px;
+                        }
+                        @include to (1330px){
+                            padding-left: 42px !important;
+                        }
+                        @include to (1320px){
+                            padding-left: 50px !important;
+                            min-width: 206px ;
+                            margin-top: 10px;
+                        }
+                      
+                        &:before{
+                            content:'';
+                            width: 32px;
+                            height: 28px;
+                            left: 10px;
+                            display: block;
+                            position: absolute;
+                            top: 10px;
+                            background-image:url('./gfx/black_wish.png');
+                            background-size: cover;
+                            z-index: 999;
+                            opacity: 1 !important;
+                        }
+                        &:hover{
+                            background: $gold_gradient !important;
+                            padding: .3em 1em;
+                            color:#000 !important;
+                            border:none;
+                            &:after{
+                                display: none;
+                            }
+                            &:before{
+                                background-image:url('./gfx/gold_wish.png');
+                            }
+                        }
+                    }
+                }
+              
 
                 & .product_title{
                     font-size: 48px;
@@ -42,12 +131,13 @@
                         color:$main_grey;
                     }
                 }
+               
                 & .ai_title{
                     margin:40px 0px 10px 0;
                     font-weight: bold;
                     font-size: 16px;
-                    display: block;
-                    position: relative;
+                    display: inline-block;
+                    //position: relative;
                      &:before{
                         width: 100%;
                         height: 1px;
@@ -156,7 +246,7 @@
                 & .stock{
                     display: none;
                 }
-                & form.cart{
+                & .cart{
                     padding-top: 40px !important;
                     clear: both;
                     display: flex;
@@ -221,7 +311,7 @@
                         }
                         @include to (1320px){
                             padding-left: 50px !important;
-                            min-width: 200px ;
+                            min-width: 206px ;
                             margin-top: 10px;
                         }
                         & i{
@@ -237,7 +327,7 @@
                             top: 10px;
                             background-image:url('./gfx/product_cart.png');
                             background-size: cover;
-                            z-index: 9999;
+                            z-index: 999;
                             opacity: 1 !important;
                         }
                         &:hover{
@@ -303,7 +393,7 @@
                         left:20px;
                         @include to (1320px){
                             left:0;
-                            min-width: 200px ;
+                            min-width: 206px ;
                             margin-top: 10px;
                             padding: 14px !important;
                         }
@@ -328,7 +418,7 @@
                             top: 10px;
                             background-image:url('./gfx/black_wish.png');
                             background-size: cover;
-                            z-index: 9999;
+                            z-index: 999;
                             opacity: 1 !important;
                         }
                         &:hover{

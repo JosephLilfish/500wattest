@@ -12,6 +12,7 @@
         margin-bottom: 70px;
         display: flex;
         flex-direction: column;
+    
         @include to ($breakpoint-md){
             width: 46%;
         }
@@ -20,6 +21,7 @@
             margin-bottom: 15px;
             border-bottom: 1px solid #e1e1e1;
             padding-bottom: 15px;
+          
         }
         & a{
                 display: block;

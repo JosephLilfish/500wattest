@@ -1,0 +1,99 @@
+.discountBox{
+    margin: 15px 0;
+    padding: 10px 0px;
+    background-image:linear-gradient(86deg, rgb(230, 230, 230) 0%, rgb(230, 230, 230) 70%, rgba(149,147,147,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    @include to ($breakpoint-md){
+        flex-direction: column;
+        background-image:linear-gradient(180deg, rgb(230, 230, 230) 0%, rgb(230, 230, 230) 60%, rgba(149,147,147,1) 100%);
+    }
+    .discountDesc{
+       
+        padding: 0 5px;
+        @include to ($breakpoint-md){
+            padding-bottom: 15px;
+            text-align: center;
+          
+        }
+        span{
+            color: $youngYellow;
+        }
+    }
+    button{
+        background-color: transparent;
+        border:none;
+        font-family: 'Noto Sans',Helvetica,Arial,Lucida,sans-serif;
+        font-size: 16px;
+        cursor: pointer;
+
+    }
+}
+
+.discountPopup{
+    min-width: 320px;
+    max-width: 400px;
+    margin: 15px 0;
+    display: none;
+    background-color: white;
+    position: absolute;
+    top:30%;
+    left: calc( 75% - 200px);
+    @include to ($breakpoint-md){
+        left: calc( 50% - 200px); 
+    }
+    @include to ($breakpoint-sm){
+        left: calc( 65% - 200px); 
+    }
+    z-index:999;
+    border: 1px solid $dark_grey;
+    
+    .popupClose{
+        text-align: right;
+       background-color: white;
+       border-radius: 50%;
+        font-size: 20px;
+        position: absolute;
+        right: -10px;
+        top: -10px;
+    }
+    .popupImage{
+        background-image: url("./gfx/404.jpg");
+        min-height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .popupTextBox{
+        
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h2{
+            margin-bottom: 20px;
+        }
+        .popupList{
+            margin: auto;
+            margin-bottom: 20px;
+            width: 70%;
+            font-weight: 600;
+            .singleDisc{
+                border-bottom: 1px solid $light_grey;
+                display: flex;
+                justify-content: space-between;
+                padding-top: 5px;
+              .goldDisc{
+                  background-image: $gold_gradient_2;
+                  padding:5px;
+                  text-align: center;
+                  min-width: 100px;
+              }
+            }
+        }
+        .popupAddInfo{
+            font-size: 12px;
+        }
+    }
+   
+}

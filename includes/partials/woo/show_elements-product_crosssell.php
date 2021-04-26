@@ -14,7 +14,7 @@
    
         $args = array(
         
-            'posts_per_page' => -1,
+            'posts_per_page' => 4,
             'post_type' => 'product',
             'orderby' => 'rand',
             'meta_key' => 'cross_sell_prod',

@@ -40,7 +40,10 @@
             }
             #left-area{
                 padding-left: 1% !important;
-               
+               .price{
+                   white-space: nowrap;
+                   font-size: 19px;
+               }
             }
         }
         & .category_main_img{

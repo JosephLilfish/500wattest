@@ -58,6 +58,10 @@ function eg_enqueue_scripts() {
 
      wp_enqueue_script( 'slick', "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" );
 
+     wp_enqueue_script( 'variablePge', get_stylesheet_directory_uri() . '/variablepage.js', array( 'jquery' ), false, true );
+
+     wp_enqueue_script( 'discountPopup', get_stylesheet_directory_uri() . '/js/discountPopup.js', array( 'jquery' ), false, true );
+
 
 }
 

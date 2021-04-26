@@ -7,6 +7,7 @@
                 width: 16.96%!important;
                 margin: 0 3.8% 2.992em 0!important;
                 clear: none!important;
+              
                 &:nth-child(4n){
                     clear: none!important;
                 }
@@ -22,3 +23,16 @@
     } 
   }
 
+  @media screen and (min-width: 768px) and (max-width: 980px){
+
+    [class*=woocommerce]{
+        ul.products{
+    
+            li.first{
+                &:nth-child(3n+1){
+                    clear: both!important;
+                }
+            }
+        }
+    }
+  }

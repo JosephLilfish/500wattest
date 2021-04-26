@@ -37,9 +37,12 @@
                 }
                 & .main_li_uh{
                     &:hover{
-                        background: $gold_gradient;
+                        //background: $gold_gradient;
                         & > a{
                             color:#000 !important;
+                            background: -webkit-linear-gradient(86deg, rgba(120,103,56,1) 0%, rgba(246,217,138,1) 49%, rgba(120,103,56,1) 100%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
                         }
                     }
                 }
@@ -85,11 +88,16 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
+                                
                                // border: 1px solid #6A6A6A;
                                 &:hover{
-                                    background: $gold_gradient;
+                                    //background: $gold_gradient;
                                     & > a{
                                         color:#000 !important;
+                                        background: -webkit-linear-gradient(86deg, rgba(120,103,56,1) 0%, rgba(246,217,138,1) 49%, rgba(120,103,56,1) 100%);
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent;
+
                                     }
                                 }
                                 &.active_cat{
@@ -128,7 +136,7 @@
                                     flex-direction: column;
                                     position: absolute;
                                     // background-color: $main_grey;
-                                    background-color: #4a4a4a;
+                                    background-color: white;
                                     width: 100%;
                                     left: 0px;
                                     top: 100%;
@@ -138,9 +146,12 @@
                                             text-align: center;
                                             border-top: 1px solid #6A6A6A;
                                             &:hover{
-                                                background: $gold_gradient;
+                                                //background: $gold_gradient;
                                                 & > a{
                                                     color:#000 !important;
+                                                    background: -webkit-linear-gradient(86deg, rgba(120,103,56,1) 0%, rgba(246,217,138,1) 49%, rgba(120,103,56,1) 100%);
+                                                    -webkit-background-clip: text;
+                                                    -webkit-text-fill-color: transparent;
                                                 }
                                             }
                                             &.active_cat{
@@ -255,9 +266,12 @@
             & .head_cat_main_ul{
                 & .main_li_uh{
                     &:hover{
-                        background: $gold_gradient;
+                        //background: $gold_gradient;
                         & > a{
                             color:#000 !important;
+                            background: -webkit-linear-gradient(86deg, rgba(120,103,56,1) 0%, rgba(246,217,138,1) 49%, rgba(120,103,56,1) 100%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
                         }
                         & .low_ul_uh{
                             top:100px !important;
@@ -268,8 +282,29 @@
         }
     }
 }
+#mg-wprm-wrap{
+    background-color: white;
+    ul#wprmenu_menu_ul{
+    li.menu-item{
+        a{
+            color: black !important;;
+        }
+     }
+    }
+}
+
 #wprmenu_menu_ul{
     margin-top: 46px !important;
+    li{
+       a{
+           color: black !important;
+       }
+       span.wprmenu_icon{
+           &:hover{
+            color: black !important;
+           }
+       }
+    }
 }
 #wprmenu_bar{
     & .bar_logo{

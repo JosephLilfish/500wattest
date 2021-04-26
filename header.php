@@ -123,7 +123,10 @@
 	$et_slide_header = 'slide' === et_get_option( 'header_style', 'left' ) || 'fullscreen' === et_get_option( 'header_style', 'left' ) ? true : false;
 
 ?>
-<div class="mobileInfoBar">Darmowa dostawa od <span>300zł</span>
+
+<div
+
+ class="mobileInfoBar">Darmowa dostawa od <span>300zł</span>
 	<hr>
 </div>
 
@@ -234,7 +237,12 @@
 
 				</div> <!-- #et-secondary-menu -->
 
-				<div class="topBarInfo">Darmowa dostawa od <span>300zł</span></div>
+				<div class="topBarInfo">
+				
+				<div class="topBarText">	Darmowa dostawa od <span>300zł</span></div>
+			
+			
+				</div>
 			
 			</div> <!-- .container -->
 			<hr>
