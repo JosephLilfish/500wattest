@@ -58,11 +58,14 @@
         top: -10px;
     }
     .popupImage{
-        background-image: url("./gfx/404.jpg");
+        background-image: url("./gfx/okno_znizki.jpg");
         min-height: 200px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+    }
+    hr{
+        margin-top: 0;
     }
     .popupTextBox{
         

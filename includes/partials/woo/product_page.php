@@ -151,7 +151,10 @@ add_action( 'woocommerce_after_single_product', 'recent_prod', 10 );
 function recent_prod(){
 
     echo do_shortcode('[show_elements woo="product_crosssell"]');
+    echo do_shortcode('[product_bulb_slider]');
+    echo do_shortcode('[product_custom_slider]');
     echo do_shortcode('[show_elements woo="products_in_product"]');
+    
 
 }
  
@@ -188,7 +191,7 @@ function woocommerce_discount(){
     ?>
    
         <div class="discountBox">
-       <div class="discountDesc"> <p>Kup<span> więcej </span> by wydać <span> mniej, </span>rabaty nawet do <span> 10% </span>!</p></div>
+       <div class="discountDesc"> <p><i class="far fa-credit-card"></i> Kup<span> więcej </span> by wydać <span> mniej, </span>rabaty nawet do <span> 10% </span>!</p></div>
        <button class="discountButton">Sprawdź szczegóły</button>
 
 

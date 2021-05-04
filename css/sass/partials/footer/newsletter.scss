@@ -1,7 +1,7 @@
 .over_newsletter{
  
     margin-top: 20px;
-    background-color: $main_grey;
+    background-color: $white;
 }
 .foot_newsletter{
     display: flex;
@@ -12,7 +12,7 @@
         flex-direction: column;
     }
     & h3{
-        color:$light-grey;
+        color:$black;
         font-size: 32px;
         @include to ($breakpoint-md){
             text-align: center;

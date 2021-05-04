@@ -1,10 +1,10 @@
 .aboutSection{
-
-    hr{
-        margin-bottom: 40px;
-    }
+hr{
+    margin-bottom: 40px;
+}
+ 
 .aboutUs{
-
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
     @include to ($breakpoint-md){

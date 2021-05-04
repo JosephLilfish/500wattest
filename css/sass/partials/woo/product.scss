@@ -480,7 +480,7 @@
             content:'';
         }
     }
-    .shop_product.slick_in_prod {
+    .shop_product.slick_in_prod, .shop_product.slick_in_prod_custom{
         position: relative;
         & .shop_item{
             margin: 20px;
