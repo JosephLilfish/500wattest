@@ -2347,6 +2347,11 @@ input[type=number] {
     .single-product .shop_product.slick_in_prod .slick-arrow:hover, .single-product .shop_product.slick_in_prod_custom .slick-arrow:hover {
       cursor: pointer; }
 
+.single-product .shop_product.slick_in_prod_custom a {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 5px; }
+
 @media screen and (max-width: 449px) {
   .woocommerce-message, .woocommerce-Message {
     display: flex;
@@ -2364,7 +2369,7 @@ input[type=number] {
   .woocommerce ul.products li.product:nth-child(4n+1) {
     clear: none !important; } }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1151px) {
   [class*=woocommerce] ul.products li.product {
     width: 16.96% !important;
     margin: 0 3.8% 2.992em 0 !important;

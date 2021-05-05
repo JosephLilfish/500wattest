@@ -536,6 +536,14 @@
             }
         }
     }
+
+    .shop_product.slick_in_prod_custom{
+        a{
+         max-width: 400px;
+         margin: auto;  
+         margin-top: 5px;
+        }
+    }
 } 
 .woocommerce-message,.woocommerce-Message{
     @include to ($breakpoint-xs){
